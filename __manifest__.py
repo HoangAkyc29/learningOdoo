@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+{
+    'name': 'Odoo 16 Practice',
+    'version': '2.0.0',
+    'summary': 'Odoo 16 Practice',
+    'sequence': -100,
+    'description': """No description """,
+    'author': 'NMH',
+    'license': 'AGPL-3',
+    'depends': [
+        'sale',
+        'mail',
+        'website_slides',
+        'hr',
+    ],
+    'data': [
+        'security/ir.model.access.csv',
+        'data/data.xml',
+        'wizard/create_appointment_view.xml',
+        'wizard/search_appointment_view.xml',
+        'views/patient_view.xml',
+        'views/doctor_view.xml',
+        'views/appointment_view.xml',
+        'views/medicine_view.xml',
+        'views/kids_view.xml',
+        'views/patient_gender_view.xml',
+        'views/sale.xml',
+        'report/patient_details_template.xml',
+        'report/patient_card.xml',
+        'report/report.xml'
+    ],
+    'demo': [],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}
